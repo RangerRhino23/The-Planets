@@ -20,13 +20,14 @@ def input(key):
     if key == 'q':
         quit()
     if key == 'g':
-        print(player.position)
+        EditorCamera()
 
 terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3)
 
 player = FirstPersonController(y=1)
 
-base = Entity(model='assets/models/base.obj', scale=0.50, y=-2, collider='mesh', z=30)
+test = Entity(model='quad', texture='assets/screen.png', scale_y=5, y=3)
+test.scale_x = (2*test.scale_y)
 
 
 app.run()

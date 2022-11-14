@@ -1,5 +1,6 @@
 1. Make menu screen
-2. Model Military base (Exterior)
-3. Model Equipment (Interior)
-4. Make template world
-5. Make world selection
+2. Model Military base (Exterior) Done (Could work on)
+3. Model Equipment (Interior) Done (Could work on)
+4. Make template world Done (Mercury, Venus, Earth, and Mars made)
+5. Make world selection (homebase.py - Selection in spaceship)
+6. Cut senes? (cut senes from spaceship to different planets)
