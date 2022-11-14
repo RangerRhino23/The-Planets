@@ -22,7 +22,7 @@ def input(key):
     if key == 'g':
         EditorCamera()
 
-terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3)
+terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3, color=color.rgb(255,157,58))
 
 player = FirstPersonController(y=1)
 

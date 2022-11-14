@@ -2,6 +2,7 @@ from ursina import *
 from ursina.prefabs.first_person_controller import FirstPersonController
 
 app = Ursina()
+Sky(texture='..\\assets\\space.png')
 
 def update():
     camera.fov = 90
@@ -22,7 +23,7 @@ def input(key):
     if key == 'g':
         EditorCamera()
 
-terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3)
+terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3, color=color.rgb(180,31,47))
 
 player = FirstPersonController(y=1)
 
