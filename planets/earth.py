@@ -24,6 +24,7 @@ def input(key):
         EditorCamera()
 
 terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3)
+water = Entity(model='cube', color=color.blue, scale=(500,1,500), y=-1.5)
 
 player = FirstPersonController(y=1)
 
