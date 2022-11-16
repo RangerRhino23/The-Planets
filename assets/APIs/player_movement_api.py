@@ -1,6 +1,7 @@
 from ursina import *
+#Setup "inport player_movement_api as pm"
 
-
+#In update() put "pm.player_movment(player)"
 def player_movement(player):
     camera.fov = 90
     camera.y = 0

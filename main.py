@@ -1,21 +1,12 @@
 from ursina import *
 from ursina.prefabs.first_person_controller import FirstPersonController
-from ursina.shaders import lit_with_shadows_shader 
+from ursina.shaders import lit_with_shadows_shader
+import assets.APIs.player_movement_api as pma
 
 app = Ursina()
 
 def update():
-    camera.fov = 90
-    camera.y = 0
-    player.speed = 18
-    #Sprint, Crouch, Zoom
-    if held_keys['r']:
-        player.speed = 23
-    if held_keys['left shift']:
-        camera.y = -0.25
-        player.speed = 13
-    if held_keys['c']:
-        camera.fov = 60
+    pma.player_movement(player)
 
 def input(key):
     if key == 'q':
