@@ -20,10 +20,12 @@ def input(key):
 
 #Temp
 terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3, shader=lit_with_shadows_shader)
-base = Entity(model='assets/models/base.obj', scale=0.50, collider='mesh', position=(-132,5,44), shader=lit_with_shadows_shader)
+base = Entity(model='assets/models/space_base.obj', scale=0.50, collider='mesh', position=(-132,5,44), shader=lit_with_shadows_shader)
 water = Entity(model='cube', color=color.blue, scale=(500,1,500), y=-1.5)
 
-player = FirstPersonController(position=(-130,4,120))
+button = Button(model='cube', position=(-128, 7, 27))
+
+player = FirstPersonController(position=(-115,4,67))
 
 
 pivot = Entity()
