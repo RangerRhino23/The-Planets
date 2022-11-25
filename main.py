@@ -19,16 +19,12 @@ def input(key):
 
 
 #Temp
-terrain = Entity(model=Terrain('heightmap_1', skip=8), scale=(500,10,500), texture='grass', collider='mesh', y=-3, shader=lit_with_shadows_shader)
-base = Entity(model='assets/models/space_base.obj', scale=0.50, collider='mesh', position=(-132,5,44), shader=lit_with_shadows_shader)
-water = Entity(model='cube', color=color.blue, scale=(500,1,500), y=-1.5)
-
-button = Button(model='cube', position=(-128, 7, 27))
+space_base = Entity(model='assets/models/space_base.obj', scale=0.50, collider='mesh', position=(-132,5,44), shader=lit_with_shadows_shader)
 
 player = FirstPersonController(position=(-115,4,67))
 
 
 pivot = Entity()
-DirectionalLight(parent=pivot, position=(-151, 10, 148), shadows=True, rotation=(45, -45, 45))
+DirectionalLight(parent=pivot, position=(-151, 50, 148), shadows=True, rotation=(45, -45, 45))
 
 app.run()
