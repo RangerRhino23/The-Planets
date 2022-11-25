@@ -28,3 +28,4 @@ pivot = Entity()
 DirectionalLight(parent=pivot, position=(-151, 50, 148), shadows=True, rotation=(45, -45, 45))
 
 app.run()
+
