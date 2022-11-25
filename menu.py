@@ -1,8 +1,7 @@
 from ursina import *
 
 app = Ursina()
-#Sky(texture='assets/menu.png')
-sky = Entity(model='quad', texture='assets/space.png', z=1, scale=(17,10))
+background = Entity(model='quad', texture='assets/space.png', z=1, scale=(17,10))
 
 def update():
     pass
